@@ -23,13 +23,7 @@ cd frontend
 npm install
 ```
 
-3. Create a `.env` file in the frontend root directory:
-
-```
-REACT_APP_API_URL=http://localhost:3000
-```
-
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 npm start
@@ -37,7 +31,7 @@ npm start
 
 The app will run on http://localhost:3001
 
-5. Test the complete setup:
+4. Test the complete setup:
 - Ensure backend is running on http://localhost:3000
 - Open http://localhost:3001 in your browser
 - Fill out the travel form and submit
@@ -51,9 +45,7 @@ The app will run on http://localhost:3001
 
 2. If you can't connect to the backend:
    - Ensure backend is running (see backend README)
-   - Check that REACT_APP_API_URL in .env matches your backend URL
    - Check browser console for CORS errors
-   - Verify backend is responding at http://localhost:3000/test-perplexity
 
 3. If the app doesn't load:
    - Clear your browser cache
@@ -72,19 +64,12 @@ src/
   │   └── ...
   ├── App.js             # Main application component
   ├── index.js           # Application entry point
-  └── styles/            # CSS styles
 ```
 
 ## Available Scripts
 
 ### `npm start`
 Runs the app in development mode at http://localhost:3001
-
-### `npm test`
-Launches the test runner in interactive watch mode
-
-### `npm run build`
-Builds the app for production to the `build` folder
 
 ## Features
 
@@ -111,26 +96,9 @@ The frontend makes POST requests to `/calculate-budget` endpoint with the follow
 
 ## Development Notes
 
-1. The app uses React 19 with modern hooks and patterns
 2. Styling is done with CSS modules
 3. API calls are made using the fetch API
 4. Environment variables must start with REACT_APP_
-
-## Production Build
-
-1. Update .env for production:
-```
-
-REACT_APP_API_URL=https://your-backend-railway-url.app
-```
-
-2. Create production build:
-```
-
-npm run build
-```
-
-3. The `build` folder will contain deployment-ready files
 
 ## Running the Complete Stack
 
